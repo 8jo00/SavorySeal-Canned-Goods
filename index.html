@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavorySeal Canned Goods</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="SavorySeal Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Welcome Section with Semi-Transparent Background -->
+<section class="welcome-section">
+    <div class="welcome-overlay"></div>
+    <div class="welcome-content">
+        <h1>Welcome to SavorySeal Canned Goods</h1>
+        <h2>"Preserving Freshness, Sealing in Flavor!"</h2>
+    </div>
+</section>
+    <h1 class="about"><center>About Us</center></h1>
+    <p class="aboutstones">At SavorySeal, we believe in delivering high-quality, nutritious, and delicious canned foods that retain the freshness of farm-to-table produce. Our products are carefully prepared, using natural ingredients and sustainable practices to ensure you get the best taste and nutrition in every bite. Whether you're stocking your pantry, preparing for emergencies, or simply looking for quick and healthy meal options, SavorySeal has you covered!</p>
+
+
+
+
+ <!-- Product Catalog -->
+ <h1 class="best">Best Sellers</h1>
+ <section id="catalog">
+     <div class="product" data-name="Chunky Beef Stew">
+         <img src="sp1.webp" alt="Chunky Beef Stew">
+         <h3>Chunky Beef Stew</h3>
+         <p>Description:<br>
+            Tender beef chunks with carrots and potatoes in a rich, savory gravy.</p>
+            <span>$4.50 BZD</span>
+         <button onclick="addToCart('Chunky Beef Stew', 4.50)">Add to Cart</button>
+     </div>
+        <div class="product" data-name=" Spicy Chili Con Carne">
+            <img src="sp2.webp" alt=" Spicy Chili Con Carne">
+            <h3>Spicy Chili Con Carne</h3>
+            <p>Description:<br>  
+                Hearty beans and ground beef simmered in a zesty tomato and chili sauce.</p>
+            <span> $4.50 BZD</span>
+            <button onclick="addToCart('Spicy Chili Con Carne', 4.50)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Creamy Corned Beef ">
+            <img src="sp3.webp" alt="Creamy Corned Beef ">
+            <h3>Creamy Corned Beef </h3>
+            <p>Description:<br>
+                Premium corned beef in a smooth, flavorful sauce—perfect for sandwiches or rice.</p>
+            <span>$3.99 BZD</span>
+            <button onclick="addToCart('Creamy Corned Beef ', 3.99)">Add to Cart</button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SavorySeal Canned Goods. All rights reserved.</p>
+    </footer>
+</body>
+</html>

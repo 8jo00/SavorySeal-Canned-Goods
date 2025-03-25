@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.jpeg" alt="Savoryseal Logo" class="nav-logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="search-container">
+                    <input type="text" id="search" placeholder="Search ..." onkeyup="handleSearch(event)">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="catalog">
+        <div class="product" data-name="Chunky Beef Stew">
+            <img src="sp1.webp" alt="Chunky Beef Stew">
+            <h3>Chunky Beef Stew</h3>
+            <p>Description:<br>
+               Tender beef chunks with carrots and potatoes in a rich, savory gravy.</p>
+               <span>$4.50 BZD</span>
+            <button onclick="addToCart('Chunky Beef Stew', 4.50)">Add to Cart</button>
+        </div>
+           <div class="product" data-name=" Spicy Chili Con Carne">
+               <img src="sp2.webp" alt=" Spicy Chili Con Carne">
+               <h3>Spicy Chili Con Carne</h3>
+               <p>Description:<br>  
+                   Hearty beans and ground beef simmered in a zesty tomato and chili sauce.</p>
+               <span> $4.50 BZD</span>
+               <button onclick="addToCart('Spicy Chili Con Carne', 4.50)">Add to Cart</button>
+           </div>
+           <div class="product" data-name="Creamy Corned Beef ">
+               <img src="sp3.webp" alt="Creamy Corned Beef ">
+               <h3>Creamy Corned Beef </h3>
+               <p>Description:<br>
+                   Premium corned beef in a smooth, flavorful sauce—perfect for sandwiches or rice.</p>
+               <span>$3.99 BZD</span>
+               <button onclick="addToCart('Creamy Corned Beef ', 3.99)">Add to Cart</button>
+           </div>
+
+        <div class="product" data-name="Jerk Chicken in Sauce ">
+            <img src="sp4.webp" alt="Jerk Chicken in Sauce ">
+            <h3>Jerk Chicken in Sauce </h3>
+            <p>Description:<br>
+                Succulent chicken pieces marinated in authentic Caribbean jerk spices.
+            </p>
+            <span>$5.25 BZD</span>
+            <button onclick="addToCart('Jerk Chicken in Sauce ', 5.25)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="AquaBeat Splash">
+            <img src="sp5.webp" alt="AquaBeat Splash">
+            <h3>AquaBeat Splash</h3>
+            <p>Description:<br>
+                A waterproof and dustproof Bluetooth speaker with vibrant LED lighting, ideal for pool parties and beach outings.</p>
+            <span>$129.99 BZD</span>
+            <button onclick="addToCart('AquaBeat Splash', 129.99)">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Vegetable Lentil Soup">
+            <img src="sp6.webp" alt="Vegetable Lentil Soup">
+            <h3>Vegetable Lentil Soup</h3>
+            <p>Description:<br>
+                Protein-packed lentils with carrots, celery, and herbs in a light broth.</p>
+            <span>$3.75 BZD</span>
+            <button onclick="addToCart('Vegetable Lentil Soup', 3.75)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Savoyseal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
